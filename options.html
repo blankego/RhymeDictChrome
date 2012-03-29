@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+	<title>RhymeDict Options</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<script type="text/javascript" src="lib/j2html.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+	<link rel="stylesheet" href="css/options.css"/>
+</head>
+
+<body>
+	<div class="optionPage">
+		<h2>RhymeDict 設置</h2>
+		<div class="optionTable">
+			<section>
+				<h3>定義快捷鍵：</h3>
+				<div>
+					<p>當前快捷鍵 － <span id="shortcut"></span></p>
+					<input type="button" id="changeShortcut" value="更改"/>
+
+				</div>
+			</section>
+			<section>
+				<h3>已安裝辭書：</h3>
+				<div id="dictList"></div>
+			</section>
+			
+			<section>
+				<form id="fChoosers">
+				<h3>導入辭書包裹：</h3>
+				<input id="dictPkg" type="file" webkitDirectory="" directory=""/>
+				<h3>導入在線辭書設置：</h3>
+				<input id="olConfig" type="file" webkitDirectory="" directory=""/>
+				</form>
+			</section>
+		</div>
+	</div>
+	<div class="modalDlg-overlay">
+		<div class="modalDlg-mask"></div>
+		<div class="modalDlg">
+			<div id="shortcutDlg">
+				請輸入按鍵組合...
+				<br/>
+				<button class="modalDlg-close">close</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

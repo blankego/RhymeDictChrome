@@ -1,0 +1,15 @@
+<h2 id="hw">{{hw}}</h2>
+{{#entries}}
+	{{#radical}}
+		<div class="dict-nav">
+			<span class="vol">卷{{vol_id}}</span> - <span class="rad">{{id}}:{{name}}部</span>
+		</div>
+	{{/radical}}
+	{{#entries}}
+	<table class="dict-entry">
+		<tr><th >原文</th><td>{{orig}}</td></tr>
+		{{#hueen}}<tr><th>鉉注</th><td class="dict-definition">{{hueen}}</td></tr>{{/hueen}}
+		{{#duann}}<tr><th>段注</th><td class="dict-definition">{{duann}}</td></tr>{{/duann}}
+	</table>
+	{{/entries}}
+{{/entries}}

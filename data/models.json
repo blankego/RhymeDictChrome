@@ -1,0 +1,26 @@
+{
+	"DictIdx":{
+		"modelName":"DictIdx",
+		"tableName":"dict_idx",
+		"type":"dictIdx",
+		"label":"辭典索引",
+		"fields":{
+			"hw":["TEXT","PRIMARY KEY","NOT NULL"],
+			"dict_id":["INTEGER","PRIMARY KEY","NOT NULL"]
+		}
+	},
+	"Qx":{
+		"id":1,
+		"modelName":"Qx",
+		"tableName":"qx",
+		"type":"dictHw",
+		"label": "康熙字典",
+		"totalRecs": 46823,
+		"csv": "qx.csv",
+		"fields": {
+			"hw": ["TEXT", "PRIMARY KEY", "NOT NULL"],
+			"definition": ["TEXT"],
+			"review": ["TEXT"]
+		}
+	}
+}

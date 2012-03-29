@@ -1,0 +1,76 @@
+{
+	"SmRadical":{
+		"csv":"sm_radical.csv",
+		"totalRecs":540,
+		"view":"SmRadical",
+		"tableName":"sm_radical",
+		"modelName":"SmRadical",
+		"label":"說文目次",
+		"fields":{
+			"id":["INTEGER","PRIMARY KEY","NOT NULL"],
+			"name":["TEXT","NOT NULL"],
+			"vol_id":["INTEGER","NOT NULL"]
+		},
+		"relations":{
+			"hws":{
+				"refModel":"Sm",
+				"type":"HAS MANY",
+				"keyMatch":{"id":"rad"}
+			}
+		}
+
+	},
+	"SmEntry":{
+		"totalRecs":10409,
+		"csv":"sm_entry.csv",
+		"tableName":"sm_entry",
+		"modelName":"SmEntry",
+		"label":"說文辭條",
+		"fields":{
+			"rad":["INTEGER","PRIMARY KEY","NOT NULL"],
+			"ord":["INTEGER","PRIMARY KEY","NOT NULL"],
+			"orig":["TEXT"],
+			"hueen":["TEXT"],
+			"duann":["TEXT"],
+			"note":["TEXT"]
+		},
+		"relations":{
+			"hws":{
+				"refModel":"Sm",
+				"type":"HAS MANY",
+				"keyMatch":{"rad":"rad","ord":"ord"}
+			}
+		}
+	},
+	"Sm":{
+		"id":2,
+		"csv":"sm.csv",
+		"view":"Sm",
+		"tableName":"sm",
+		"modelName":"Sm",
+		"label":"說文",
+		"type":"dictHw",
+		"totalRecs":11835,
+		"fields":{
+			"id":["INTEGER","PRIMARY KEY","NOT NULL"],
+			"hw":["TEXT","NOT NULL"],
+			"pos":["INTEGER","NOT NULL"],
+			"rad":["INTEGER","NOT NULL"],
+			"ord":["INTEGER","NOT NULL"]
+		},
+		"relations":{
+			"entries":{
+				"refModel":"SmEntry",
+				"type":"BELONGS TO",
+				"keyMatch":{"rad":"rad","ord":"ord"},
+				"prefetch":true
+			},
+			"radical":{
+				"refModel":"SmRadical",
+				"type":"BELONGS TO",
+				"keyMatch":{"rad":"id"},
+				"prefetch":true
+			}
+		}
+	}
+}

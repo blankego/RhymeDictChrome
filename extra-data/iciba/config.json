@@ -1,0 +1,11 @@
+{
+	"Iciba":{
+		"label":"iciba",
+		"id":204,
+		"online":true,
+		"queryPattern":"http://dict-co.iciba.com/api/dictionary.php?w=@@hw@@",
+		"contentType":"document",
+		"xsl":"Iciba"
+
+	}
+}

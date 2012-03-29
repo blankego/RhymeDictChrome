@@ -1,0 +1,32 @@
+{
+
+	"name":"RhymeDict"
+	,"update_url": "http://rhyme-dict-chrome.googlecode.com/hg/update/update.xml"
+	,"version":"1.0.1"
+	,"description": "Highly extensible Chinese Dictionary look-up."
+	,"icons":{
+		"16": "/image/icon-18.png"
+        ,"48": "/image/icon-48.png"
+        ,"128": "/image/icon-128.png"
+	}
+	,"omnibox": { "keyword" : "rd" }
+	,"background_page": "background.html"
+	,"browser_action":{
+		"default_title":"RhymeDict"
+		,"default_icon": "image/icon-18.png"
+	}
+	,"content_scripts":[
+		{
+			"matches":["<all_urls>"]
+			,"js":["js/content.js"]
+		}
+	]
+	,"permissions":[
+		"tabs", "<all_urls>"
+		,"contentSettings"
+		,"contextMenus"
+		,"unlimitedStorage"
+
+	]
+
+}

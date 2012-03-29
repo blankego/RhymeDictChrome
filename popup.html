@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html>
+<head>
+    <title><!-- Insert your title here --></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+        body{
+            background-color: #F7F7F7;
+            margin: 0;
+            padding: 0;
+        }
+        div.menu{
+            margin: 0;
+            padding: 2px;
+        }
+        .menu>.item{
+            padding: 2px;
+            display: block;
+            cursor: pointer;
+            white-space: nowrap;
+            border: solid 1px #F7F7F7;
+            border-bottom: dotted 1px #F7F7F7;
+            border-radius: 4px;
+        }
+        .item:hover{
+            background-color: rgb(222, 247, 246);
+            border-color: silver;
+            color: #472E14;
+            
+        }
+        .item{
+            text-decoration: none;
+            color: #37373D;
+        }
+        
+        
+    </style>
+    <script src="js/popup.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <div class="item" id="options">設置</div>
+        <div class="item" id="help">幫助</div>
+        <div class="item" id="tools">小工具</div>
+        <hr/>
+        <div class="item" id="close">關閉</div>
+        <!--<div class="item" id="test">test</div>-->
+		<!--<div class="item" id="test2">test2</div>-->
+		<!--<div class="item" id="noty">note</div>-->
+	    <!--<div class="item" id="clear">clear all!</div>-->
+    </div>
+	<div class="message"></div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<h2 id="hw">{{hw}}</h2>
+{{#entries}}
+		<table class="dict-entry">
+			<tr><th colspan="2">讀音</th></tr>
+			{{#kMandarin}}
+				<tr><th>國語</th><td>{{kMandarin}}</td></tr>
+			{{/kMandarin}}
+			{{#kCantonese}}
+				<tr><th>粵語</th><td>{{kCantonese}}</td></tr>
+			{{/kCantonese}}
+			{{#kJapaneseOn}}
+				<tr><th>日文音讀</th><td>{{kJapaneseOn}}</td></tr>
+			{{/kJapaneseOn}}
+			{{#kJapaneseKun}}
+				<tr><th>日文訓讀</th><td>{{kJapaneseKun}}</td></tr>
+			{{/kJapaneseKun}}
+			{{#kVietnamese}}
+				<tr><th>漢越語</th><td>{{kVietnamese}}</td></tr>
+			{{/kVietnamese}}
+			{{#kHangul}}
+				<tr><th>諺文</th><td>{{kHangul}}</td></tr>
+			{{/kHangul}}
+			{{#kKorean}}
+				<tr><th>韓文羅馬字</th><td>{{kKorean}}</td></tr>
+			{{/kKorean}}
+
+			{{#kTang}}
+				<tr><th>擬唐音</th><td class="pronunciation">{{kTang}}</td></tr>
+			{{/kTang}}
+
+			<tr><th colspan="2">部首筆畫</th></tr>
+
+			<tr><th>unicode</th><td>{{kRSUnicode}}</td></tr>
+			{{#kTotalStrokes}}
+				<tr><th>總筆畫數</th><td>{{kTotalStrokes}}</td></tr>
+			{{/kTotalStrokes}}
+			
+			{{#kRSKangXi}}
+				<tr><th>《康熙》部筆</th><td>{{kRSKangXi}}</td></tr>
+			{{/kRSKangXi}}
+			
+			{{#kRSKanWa}}
+				<tr><th>《大漢和》部筆</th><td>{{kRSKanWa}}</td></tr>
+			{{/kRSKanWa}}
+			
+			{{#kDefinition}}
+				<tr><th colspan="2">英文釋義</th></tr>
+				<tr><td colspan="2">{{kDefinition}}</td></tr>
+			{{/kDefinition}}
+
+			<tr><th colspan="2">編碼</th></tr>
+			{{#kFourCornerCode}}
+				<tr><th>四角號碼 </th><td>{{kFourCornerCode}}</td></tr>
+			{{/kFourCornerCode}}
+			{{#kCangjie}}
+				<tr><th>倉頡5</th><td>{{kCangjie}}</td></tr>
+			{{/kCangjie}}
+			{{#wb98}}
+				<tr><th>五筆98</th><td>{{wb98}}</td></tr>
+			{{/wb98}}
+			<tr><th colspan="2">字頻</th> </tr>
+			{{#kFrequency}}
+				<tr><th>kFrequency</th><td>{{kFrequency}}</td></tr>
+			{{/kFrequency}}
+			{{#kGradeLevel}}
+				<tr><th>kGradeLevel</th><td>{{kGradeLevel}}</td></tr>
+			{{/kGradeLevel}}
+			{{#kHanyuPinlu}}
+				<tr><th>kHanyuPinlu</th><td>{{kHanyuPinlu}}</td></tr>
+			{{/kHanyuPinlu}}
+			
+			<tr><th colspan="2">異體</th></tr>
+			{{#kCompatibilityVariant}}
+				<tr><th>兼容異體</th><td>{{kCompatibilityVariant}}</td></tr>
+			{{/kCompatibilityVariant}}
+			
+			{{#kSemanticVariant}}
+				<tr><th>語義異體</th><td>{{kSemanticVariant}}</td></tr>
+			{{/kSemanticVariant}}
+			{{#kSimplifiedVariant}}
+				<tr><th>簡化異體</th><td>{{kSimplifiedVariant}}</td></tr>
+			{{/kSimplifiedVariant}}
+			{{#kTraditionalVariant}}
+				<tr><th>傳統異體</th><td>{{kTraditionalVariant}}</td></tr>
+			{{/kTraditionalVariant}}
+			{{#kSpecializedSemanticVariant}}
+				<tr><th>特殊語義異體</th><td>{{kSpecializedSemanticVariant}}</td></tr>
+			{{/kSpecializedSemanticVariant}}
+			{{#kZVariant}}
+				<tr><th>Z異體</th><td>{{kZVariant}}</td></tr>
+			{{/kZVariant}}
+			<tr><th colspan="2">引得</th></tr>
+			{{#kXHC1983}}
+				<tr><th>83版《現漢》</th><td class="pronunciation">{{kXHC1983}}</td></tr>
+			{{/kXHC1983}}
+			{{#kCihaiT}}
+				<tr><th>舊《辭海》</th><td>{{kCihaiT}}</td></tr>
+			{{/kCihaiT}}
+			{{#kFenn}}
+				<tr><th>kFenn</th><td>{{kFenn}}</td></tr>
+			{{/kFenn}}
+			{{#kCheungBauer}}
+				<tr><th>kCheungBauer</th><td>{{kCheungBauer}}</td></tr>
+			{{/kCheungBauer}}
+			
+		</table>
+{{/entries}}

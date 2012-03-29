@@ -1,0 +1,11 @@
+{
+	"DictCn":{
+		"label":"Dict.cn",
+		"id":201,
+		"online":true,
+		"queryPattern":"http://dict.cn/ws.php?UTF8=true&q=@@hw@@",
+		"contentType":"document",
+		"xsl":"DictCn"
+
+	}
+}

@@ -22,7 +22,9 @@ RhymeDict? is a dictionary extension for Chrome brower. It aims to be a highly e
 
 ### 快捷鍵 - key shortcut
 
+
 ![](./RhymeDictChrome/raw/master/image/screen_pickup.png)
+
 
 靠拖曳滑鼠選定（高亮）字或詞語，然後按下Alt + R 鍵(可自定義)，一個浮動視窗會立時彈出，顯示查詢的結果。
 
@@ -30,7 +32,9 @@ Use your mouse to select a word or a Chinese character (left-click, hold the but
 
 ### 智能地址欄 - Omnibox
 
+
 ![](./RhymeDictChrome/raw/master/image/omnibox_search.png)
+
 
 按下Ctrl+L 組合鍵，選定omnibox（智能地址欄），也可以用滑鼠游標選定。在欄內輸入 rd + 空格，omnibox左端會顯現出「RhymeDict?」的標籤。接下來輸入欲查詢的字、詞，按下Enter，即可得出結果。
 
